@@ -10,18 +10,29 @@
 <body>
     <div class="mainbody">
         <div class="header">
-           Header UI
+         Blood Sugar Level
         </div>
         <div class="charts">
             <div class="formadd">
-                Form UI
+                <label for="sugarlevel"> Enter the Sugar Level Value</label>    
+                <input type="number" name="sugarlevel" id="sugarlevel">
+
+                <label for="typeofsugarlevelrecord">Choose a Type:</label>
+                <select id="typeofsugarlevelrecord" name="typeofsugarlevelrecord">
+                  <option value="Post">Post Food</option>
+                  <option value="Pre">Before Food</option>
+                  <option value="Random">Random</option>
+                </select>
+                <input type="submit" onclick="submitSugarValue()">
             </div>
-            <div class="chartsdisplay">
-                Charts UI
+            <br>
+            <div class="chartsdisplay" width="50px" height="50px">
+                <canvas id="myChart"></canvas>
             </div>
         </div>
     </div>
-    
+    <script src="static/charts.js"></script> 
+    <script src="static/app.js"></script>  
 </body>
-<script src="app.js"></script>
+
 </html>

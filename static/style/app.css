@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: dodgerblue;
+  margin: 0%, 0%;
+}
+
+.header {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.chartsdisplay {
+  background-color: whitesmoke;
+  width: 700px;
+  height: 400px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.charts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px, 10px, 10px, 10px;
+}
